@@ -7,18 +7,11 @@ input <- function(inputfile) {
 
 run <- function() {
    results <<- acf(x);
-   # Note, cannot produce the plot because
-   # of incompatibilities with RStudio
+   # Leaving plot out for now
 }
 
 output <- function(outputfile) {
-   sink(outputfile, append=TRUE);
-   cat("INDEX\tACF\n");
-   #fileConn <- file(outputfile);
-   for (index in 1:length(results$acf)) {
-      cat(paste(toString(index), "\t", toString(results$acf[index]), "\n"));
-   }
-   sink();   
+   write.table(results$acf, file=outputfile);
 }
 
 
