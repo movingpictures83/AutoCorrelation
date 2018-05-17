@@ -1,0 +1,2 @@
+Prefix plugins/AutoCorrelation/example/
+Plugin AutoCorrelation inputfile sunglasses.csv outputfile sunglasses.autocorrelation.txt
