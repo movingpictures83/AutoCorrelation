@@ -2,7 +2,8 @@
 # Language: R
 # Input: CSV (time series values)
 # Output: TXT (autocorrelation value)
-# Tested with: PluMA 1.0, R 3.2.5
+# Tested with: PluMA 1.1, R 4.0.0
+# Dependency stats_4.0.0
 
 PluMA plugin that takes a univariate time series dataset in CSV format and
 computes its autocorrelation function.  For the time series data, the plugin
